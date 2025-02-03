@@ -10,6 +10,12 @@ contract DoubleOrNothing {
             // return 0.
             // Hint: check if x ≤ 10, which is equivalent to x < 11
 
+            if gt(x, 10) {
+                mstore(0x00, 0)
+                return(0x00, 0x20)
+            }
+            mstore(0x00, mul(2, x))
+            return(0x00, 0x20)
         }
     }
 }

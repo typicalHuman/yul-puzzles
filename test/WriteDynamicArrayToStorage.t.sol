@@ -13,7 +13,6 @@ contract WriteDynamicArrayToStorageTest is Test {
 
     function test_WriteDynamicArrayToStorage(uint256[] calldata x, uint256 i) public {
         vm.assume(i < x.length);
-
         c.main(x);
         assertEq(c.writeHere(i), x[i]);
     }

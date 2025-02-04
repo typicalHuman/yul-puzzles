@@ -15,7 +15,6 @@ contract WriteTwoDynamicArraysToStorageTest is Test {
         public
     {
         vm.assume(i < x.length && j < y.length);
-
         c.main(x, y);
         assertEq(c.writeHere1(i), x[i]);
         assertEq(c.writeHere2(j), y[j]);

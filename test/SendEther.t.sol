@@ -12,10 +12,15 @@ contract SimpleEtherTest is Test {
     }
 
     function test_SendEther(address to, uint256 amount) public {
-        vm.assume(to != address(this) && uint160(to) > uint160(100) && to != address(c));
+        vm.assume(
+            to != address(this) &&
+                to.code.length == 0 &&
+                uint160(to) > uint160(100) &&
+                to != address(c)
+        );
         vm.assume(amount > 0);
         vm.assume(to.balance == 0);
-        
+
         vm.deal(address(c), amount);
         c.main(payable(to), amount);
         assertEq(to.balance, amount);

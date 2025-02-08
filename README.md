@@ -1,5 +1,8 @@
 # Yul Puzzles by RareSkills
 
+![img](imgs/proof.png)
+
+
 0. [ReturnBool](./src/ReturnBool.sol) (_solved_)
 1. [SimpleRevert](./src/SimpleRevert.sol) (_solved_)
 2. [RevertWithSelector](./src/RevertWithSelector.sol) (_solved_)
@@ -71,3 +74,13 @@
 68. [Approve](./src/Approve.sol) ( _solved_)
 69. [TransferFrom](./src/TransferFrom.sol) ( _solved_)
 70. [BalanceOf](./src/BalanceOf.sol) ( _solved_)
+71. [CreateSimple](./src/CreateSimple.sol) ( _solved_)
+72. [CreateSimplePayable](./src/CreateSimplePayable.sol) ( _solved_)
+73. [CreateSimpleCalldata](./src/CreateSimpleCalldata.sol) ( _solved_)
+74. [DeployOneByte](./src/DeployOneByte.sol) ( _solved_)
+75. [DeployNBytes](./src/DeployNBytes.sol) ( _solved_)
+76. [SquareRoot](./src/SquareRoot.sol)( _solved_)
+77. [Division](./src/Division.sol) ( _solved_)
+78. [AbsoluteValue](./src/AbsoluteValue.sol) ( _solved_)
+79. [SetBit](./src/SetBit.sol) ( _solved_)
+80. [Log2](./src/Log2.sol)( _solved_)

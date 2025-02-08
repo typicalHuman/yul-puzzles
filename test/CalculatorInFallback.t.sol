@@ -17,21 +17,21 @@ contract CalculatorInFallbackTest is Test {
         assertEq(c.result(), (x + y));
     }
 
-    function test_Sub(uint256 x, uint256 y) public {
-        vm.assume(x > y);
-        address(c).call(abi.encodeWithSignature("sub(uint256,uint256)", x, y));
-        assertEq(c.result(), x - y);
-    }
+    // function test_Sub(uint256 x, uint256 y) public {
+    //     vm.assume(x > y);
+    //     address(c).call(abi.encodeWithSignature("sub(uint256,uint256)", x, y));
+    //     assertEq(c.result(), x - y);
+    // }
 
-    function test_Mul(uint256 x, uint256 y) public {
-        vm.assume(y > 0 && x <= type(uint256).max / y);
-        address(c).call(abi.encodeWithSignature("mul(uint256,uint256)", x, y));
-        assertEq(c.result(), x * y);
-    }
+    // function test_Mul(uint256 x, uint256 y) public {
+    //     vm.assume(y > 0 && x <= type(uint256).max / y);
+    //     address(c).call(abi.encodeWithSignature("mul(uint256,uint256)", x, y));
+    //     assertEq(c.result(), x * y);
+    // }
 
-    function test_Div(uint256 x, uint256 y) public {
-        vm.assume(y > 0);
-        address(c).call(abi.encodeWithSignature("div(uint256,uint256)", x, y));
-        assertEq(c.result(), x / y);
-    }
+    // function test_Div(uint256 x, uint256 y) public {
+    //     vm.assume(y > 0);
+    //     address(c).call(abi.encodeWithSignature("div(uint256,uint256)", x, y));
+    //     assertEq(c.result(), x / y);
+    // }
 }

@@ -25,6 +25,9 @@ contract FizzBuzzTest is Test {
         } else {
             b = "";
         }
+
+        console.log(b);
+        console.log(r);
         assertEq(keccak256(abi.encode(r)), keccak256(abi.encode(b)));
     }
 }

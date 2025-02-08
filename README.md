@@ -1,4 +1,4 @@
-# Yul Puzzles by RareSkills
+# [Yul Puzzles by RareSkills](https://github.com/RareSkills/yul-puzzles)
 
 ![img](imgs/proof.png)
 
